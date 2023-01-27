@@ -9,9 +9,9 @@ function App() {
   return (
     <Router>
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/profile">Profile</Link>
+        <Link to='/'>Home</Link>
+        <Link to='/about'>About</Link>
+        <Link to='/profile'>Profile </Link>
       </nav>
       <Routes>
         <Route path='/' element={<Home />} />
@@ -19,6 +19,9 @@ function App() {
         <Route path='/profile' element={<Profile />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>
+      <div>
+        <h1>Footer</h1>
+      </div>
     </Router>
   );
 }
